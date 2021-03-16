@@ -37,12 +37,18 @@ The -k (key) flag takes in a file containing a key for the one time pad and puts
 In this example “test” is a file in the same directory that was created by running the otp.py like this:
 
   python3 otp.py test
+  
+To enable the tik-tak-toe feature add the -t flag to the end of your command like this:
+
+  python3 client.py 20202 -t
+  
+This does not work with the -k flag yet.
 
 
 When you run otp.py it will generate a key, create and write to the filename you passed in, then it will enter a demo mode where you can type test and watch it encrypt and decrypt it.
 
 
-Useful links I used along the way:
+Links I used along the way:
 
 Argparse: https://docs.python.org/3/library/argparse.html#required
 
