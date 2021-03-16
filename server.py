@@ -72,7 +72,7 @@ def main():
     \nAddress:", addr, "\
     \nPort :", port)
 
-    if (args.sttt):
+    if (args.ttt):
         print("tik-tak-toe mode")
         board = ttt.Board()
 
@@ -87,7 +87,7 @@ def main():
 
         with conn:
             while True:
-                if(args.sttt):
+                if(args.ttt):
                     recv_move(conn, board)
                     send_move(conn, board)
                 else:
